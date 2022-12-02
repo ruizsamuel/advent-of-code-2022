@@ -1,3 +1,5 @@
+package day01;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -25,7 +27,7 @@ public class Day1B {
 
             Collections.sort(list, Collections.reverseOrder());
 
-            System.out.println((list.get(0) + list.get(1) + list.get(2)));
+            System.out.println("Solution: " + (list.get(0) + list.get(1) + list.get(2)));
 
         } catch (IOException e) {
             System.err.println(e);

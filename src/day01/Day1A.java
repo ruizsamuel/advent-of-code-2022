@@ -1,3 +1,5 @@
+package day01;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,7 +26,7 @@ public class Day1A {
 
 			reader.close();
 
-            System.out.println("El elfo que más calorías porta tiene: " + max + " calorías.");
+            System.out.println("Solution: " + max);
 
         } catch (IOException e) {
             System.err.println(e);
