@@ -24,6 +24,7 @@ public class Day6B {
                         break;
                     }
                 }
+                
                 if (aux.size() == N) {
                     System.out.println("Solution: " + (i + 1));
                     break;
