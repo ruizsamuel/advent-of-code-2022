@@ -12,7 +12,7 @@ public class Day4B {
             String line;
             int solution = 0;
 
-			while ((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 String[] pair = line.split(",");
                 int[][] sections = {{Integer.parseInt(pair[0].split("-")[0]), Integer.parseInt(pair[0].split("-")[1])}, 
                                     {Integer.parseInt(pair[1].split("-")[0]), Integer.parseInt(pair[1].split("-")[1])}};
@@ -20,9 +20,9 @@ public class Day4B {
                 
                 if(sections[0][1] >= sections[1][0] && sections[1][1] >= sections[0][1]) solution++;
                 else if(sections[1][1] >= sections[0][0] && sections[0][1] >= sections[1][1]) solution++;
-			}
+            }
 
-			reader.close();
+            reader.close();
             System.out.println("Solution: " + solution);
 
         } catch (IOException e) {
