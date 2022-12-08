@@ -14,7 +14,7 @@ public class Day7A {
             Dir root = new Dir(null, "");
             Dir current = root;
 
-			while ((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 if (line.startsWith("$")) {
                     if (line.startsWith("$ cd")) {
                         current = current.getChild(line.split(" ")[2]);
@@ -26,7 +26,7 @@ public class Day7A {
                     current.addElement(e);
                 }
             }
-			reader.close();
+            reader.close();
 
             int solution = 0;
             for (Element e : getDirLessThan(100000, root.content)) {

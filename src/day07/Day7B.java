@@ -14,7 +14,7 @@ public class Day7B {
             Dir root = new Dir(null, "");
             Dir current = root;
 
-			while ((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 if (line.startsWith("$")) {
                     if (line.startsWith("$ cd")) {
                         current = current.getChild(line.split(" ")[2]);
@@ -26,7 +26,7 @@ public class Day7B {
                     current.addElement(e);
                 }
             }
-			reader.close();
+            reader.close();
 
             int needed = 30000000 - (70000000 - root.getSize());
             ArrayList<Element> solutionList = getDirGreaterThan(needed, root.content);
